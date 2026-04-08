@@ -172,6 +172,15 @@ $countries = new WC_Countries();
                      esc_html__( 'Vastaanottajan puhelin', 'tapojarvi-product-recipient-email' ) .
                      ': ' . esc_html( $ship_phone );
               }
+
+              // 2) Kustannuspaikka
+              $kustannuspaikka = $order->get_meta( '_shipping_kustannuspaikka', true ) ?: $order->get_meta( 'shipping_kustannuspaikka', true );
+
+              if ( $kustannuspaikka ) {
+                echo '<br><br><strong>' .
+                     esc_html__( 'Kustannuspaikka', 'tapojarvi-product-recipient-email' ) .
+                     ':</strong> ' . esc_html( $kustannuspaikka );
+              }
             ?>
           </p>
         <?php endif; ?>
