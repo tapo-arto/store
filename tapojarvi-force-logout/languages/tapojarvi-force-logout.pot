@@ -1,0 +1,49 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tapojärvi - Forced Logout on Inactivity\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-05 09:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.3.22\n"
+"X-Domain: tapojarvi-force-logout"
+
+#: tapojarvi-force-logout.php:177
+msgid "Istunto päättyi inaktiivisuuden vuoksi."
+msgstr ""
+
+#: tapojarvi-force-logout.php:199
+msgid "Istuntosi päättyi inaktiivisuuden vuoksi."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Kirjaa käyttäjän ulos passiivisuuden jälkeen, näyttää varoitus-modaalin ja "
+"ilmoittaa syyn kirjautumissivulla."
+msgstr ""
+
+#: tapojarvi-force-logout.php:90
+msgid ""
+"Olet ollut pitkään tekemättä mitään. Sinut kirjataan ulos 1 minuutin "
+"kuluttua."
+msgstr ""
+
+#: tapojarvi-force-logout.php:91
+msgid "Pysy kirjautuneena"
+msgstr ""
+
+#. Name of the plugin
+msgid "Tapojärvi - Forced Logout on Inactivity"
+msgstr ""
+
+#. Author of the plugin
+msgid "Tapojärvi Oy - Arto Huhta"
+msgstr ""
