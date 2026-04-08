@@ -1,0 +1,113 @@
+#: views/email-supplier.php:175
+msgid "Asiakkaan lisätiedot"
+msgstr "Asiakkaan lisätiedot"
+
+#. Description of the plugin
+msgid ""
+"Lisää tuotteelle/variaatiolle toimittajan sähköpostikentän ja lähettää "
+"tyylikkään kortti-sähköpostin kullekin toimittajalle kun tilausten "
+"hallitsija tekee lopullisen tilauksen."
+msgstr ""
+"Lisää tuotteelle/variaatiolle toimittajan sähköpostikentän ja lähettää "
+"tyylikkään kortti-sähköpostin kullekin toimittajalle, kun tilausten "
+"hallitsija tekee lopullisen tilauksen."
+
+#: views/email-supplier.php:96
+msgid "Määrä"
+msgstr "Määrä"
+
+#: views/email-supplier.php:68
+msgid "Puhelin"
+msgstr "Puhelin"
+
+#: includes/class-wc-email-supplier.php:21
+msgid "Sends a notification email to each supplier with styled card layout."
+msgstr "Lähettää jokaiselle toimittajalle ilmoitussähköpostin tyylitellyllä korttiasettelulla."
+
+#: views/email-supplier.php:126
+msgid "SKU"
+msgstr "SKU"
+
+#. 1: recipient email, 2: order id
+#: includes/class-wc-email-supplier.php:86
+#, php-format
+msgid "Supplier email sent to %1$s for order %2$s"
+msgstr "Toimittajasähköposti lähetettiin osoitteeseen %1$s tilauksesta %2$s"
+
+#: includes/class-wc-email-supplier.php:20
+msgid "Supplier Notification"
+msgstr "Toimittajailmoitus"
+
+#: tapojarvi-product-recipient-email.php:55
+msgid ""
+"Syötä toimittajan sähköpostiosoite. Useita osoitteita voi erottaa "
+"puolipisteellä tai pilkulla."
+msgstr ""
+"Syötä toimittajan sähköpostiosoite. Useita osoitteita voi erottaa "
+"puolipisteellä tai pilkulla."
+
+#: views/email-supplier.php:73
+msgid "Sähköposti"
+msgstr "Sähköposti"
+
+#: views/email-supplier.php:29
+msgid "Tapojärvi"
+msgstr "Tapojärvi"
+
+#. Author of the plugin
+msgid "Tapojärvi Oy"
+msgstr "Tapojärvi Oy"
+
+#. Name of the plugin
+msgid "Tapojärvi Product-Specific Recipient Emails"
+msgstr "Tapojärvi – Tuotekohtaiset vastaanottajasähköpostit"
+
+#: views/email-supplier.php:63
+msgid "Tilaaja"
+msgstr "Tilaaja"
+
+#. 1 = order no, 2 = date
+#: views/email-supplier.php:41
+#, php-format
+msgid "Tilaus #%1$s – %2$s"
+msgstr "Tilaus #%1$s – %2$s"
+
+#. %s = order number
+#: includes/class-wc-email-supplier.php:68
+#, php-format
+msgid "Tilaus #%s"
+msgstr "Tilaus #%s"
+
+#: tapojarvi-product-recipient-email.php:40
+msgid "Toimittaja"
+msgstr "Toimittaja"
+
+#: tapojarvi-product-recipient-email.php:57
+#: tapojarvi-product-recipient-email.php:79
+msgid "toimittaja@example.com"
+msgstr "toimittaja@example.com"
+
+#: views/email-supplier.php:152
+msgid "Toimitusosoite"
+msgstr "Toimitusosoite"
+
+#: views/email-supplier.php:92
+msgid "Tuote"
+msgstr "Tuote"
+
+#: views/email-supplier.php:80
+msgid "Työmaa"
+msgstr "Työmaa"
+
+#: views/email-supplier.php:185
+msgid "Tämä viesti on lähetetty Tapojärvi Store -järjestelmästä."
+msgstr "Tämä viesti on lähetetty Tapojärvi Store -järjestelmästä."
+
+#: views/email-supplier.php:165
+msgid "Vastaanottajan puhelin"
+msgstr "Vastaanottajan puhelin"
+
+#: tapojarvi-product-recipient-email.php:53
+#: tapojarvi-product-recipient-email.php:76
+msgid "Vastaanottajan sähköposti"
+msgstr "Vastaanottajan sähköposti"

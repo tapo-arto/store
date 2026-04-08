@@ -1,0 +1,116 @@
+#: tapojarvi-preorder.php:219 tapojarvi-preorder.php:226
+msgid "Haluatko varmasti jatkaa?"
+msgstr "Haluatko varmasti jatkaa?"
+
+#: tapojarvi-preorder.php:218
+msgid ""
+"Jos haluat kerätä tilauksen yhteistilaukseen ja lähettää myöhemmin muiden "
+"tilausten kanssa, sulje tämä ikkuna ja aktivoi “Lisää tämä tilaus työmaan "
+"yhteistilaukseen”."
+msgstr ""
+"Jos haluat kerätä tilauksen yhteistilaukseen ja lähettää myöhemmin muiden "
+"tilausten kanssa, sulje tämä ikkuna ja aktivoi “Lisää tämä tilaus työmaan "
+"yhteistilaukseen”."
+
+#: tapojarvi-preorder.php:225
+msgid ""
+"Keräyslista on tarkoitettu vaatekokojen ja mallien keräämiseen "
+"yhteistilausta varten. Jos haluat tilata turvallisuusmateriaaleja tai "
+"laatikkotavaroita suoraan toimittajalta, sulje tämä ikkuna ja poista edellä "
+"mainittu valinta."
+msgstr ""
+"Keräyslista on tarkoitettu vaatekokojen ja mallien keräämiseen "
+"yhteistilausta varten. Jos haluat tilata turvallisuusmateriaaleja tai "
+"laatikkotavaroita suoraan toimittajalta, sulje tämä ikkuna ja poista edellä "
+"mainittu valinta."
+
+#: tapojarvi-preorder.php:228
+msgid "Kyllä, jatka"
+msgstr "Kyllä, jatka"
+
+#. Description of the plugin
+msgid ""
+"Lisää kassalle tilausten hallitsijalle painikkeen, jolla voi valita, meneekö "
+"tilaus työmaatilaukset sivulle vai toimittajalle."
+msgstr ""
+"Lisää kassalle tilausten hallitsijalle painikkeen, jolla voi valita, meneekö "
+"tilaus työmaatilaukset-sivulle vai toimittajalle."
+
+#: tapojarvi-preorder.php:72
+msgid "Lisää tämä tilaus työmaan yhteistilaukseen"
+msgstr "Lisää tämä tilaus työmaan yhteistilaukseen"
+
+#: tapojarvi-preorder.php:197 tapojarvi-preorder.php:202
+#: tapojarvi-preorder.php:208
+msgid "Nykyinen tilaustapa:"
+msgstr "Nykyinen tilaustapa:"
+
+#: tapojarvi-preorder.php:229
+msgid "Peruuta"
+msgstr "Peruuta"
+
+#: tapojarvi-preorder.php:210
+msgid ""
+"Suositellaan esimerkiksi turvallisuusmateriaalien tai laatikossa "
+"toimitettavien tuotteiden tilaamiseen."
+msgstr ""
+"Suositellaan esimerkiksi turvallisuusmateriaalien tai laatikossa "
+"toimitettavien tuotteiden tilaamiseen."
+
+#: tapojarvi-preorder.php:204
+msgid "Suositeltava vaihtoehto, kun tilaus halutaan yhdistää muiden kanssa."
+msgstr "Suositeltava vaihtoehto, kun tilaus halutaan yhdistää muiden kanssa."
+
+#. Author of the plugin
+msgid "Tapojärvi Oy - Arto Huhta"
+msgstr "Tapojärvi Oy - Arto Huhta"
+
+#. Name of the plugin
+msgid "Tapojärvi – Worksite Pre-order"
+msgstr "Tapojärvi – Worksite Pre-order"
+
+#: tapojarvi-preorder.php:203
+msgid ""
+"Tilaus lisätään työmaan keräyslistaan ja toimitetaan myöhemmin osana "
+"yhteistilausta."
+msgstr ""
+"Tilaus lisätään työmaan keräyslistaan ja toimitetaan myöhemmin osana "
+"yhteistilausta."
+
+#: tapojarvi-preorder.php:209
+msgid ""
+"Tilaus lähetetään suoraan toimittajille, eikä jää työmaan keräyslistaan."
+msgstr ""
+"Tilaus lähetetään suoraan toimittajille, eikä jää työmaan keräyslistaan."
+
+#: tapojarvi-preorder.php:224
+msgid ""
+"Tämä tilaustapa lisää tilauksen työmaan keräyslistaan työmaatilaukset-"
+"sivulle, eikä tilausta vielä toimiteta toimittajille."
+msgstr ""
+"Tämä tilaustapa lisää tilauksen työmaan keräyslistaan työmaatilaukset-"
+"sivulle, eikä tilausta vielä toimiteta toimittajille."
+
+#: tapojarvi-preorder.php:216
+msgid ""
+"Tämä tilaustapa lähettää tilauksen suoraan tuotteiden toimittajalle eikä se "
+"tallennu työmaan yhteistilaukseen."
+msgstr ""
+"Tämä tilaustapa lähettää tilauksen suoraan tuotteiden toimittajalle eikä se "
+"tallennu työmaan yhteistilaukseen."
+
+#: tapojarvi-preorder.php:217
+msgid ""
+"Tätä tilaustapaa tulee käyttää esimerkiksi turvallisuusmateriaaleihin tai "
+"laatikkotuotteisiin, joita ei voi tilata yksittäin."
+msgstr ""
+"Tätä tilaustapaa tulee käyttää esimerkiksi turvallisuusmateriaaleihin tai "
+"laatikkotuotteisiin, joita ei voi tilata yksittäin."
+
+#: tapojarvi-preorder.php:214
+msgid "Valittu toimitustapa: <br>Suora tilaus toimittajalta"
+msgstr "Valittu toimitustapa: <br>Suora tilaus toimittajalta"
+
+#: tapojarvi-preorder.php:222
+msgid "Valittu toimitustapa: <br>Työmaan yhteistilaus"
+msgstr "Valittu toimitustapa: <br>Työmaan yhteistilaus"

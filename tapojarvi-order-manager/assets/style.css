@@ -1,0 +1,1440 @@
+
+
+/* ============================
+   TILAUSHALLINTA – KORTTILISTA (JÄSENNELTY)
+   ============================ */
+
+/* ---------- 1. KORTTI ---------- */
+.order-card {
+    position: relative !important;
+    margin: 0 0 0px !important;
+    padding: 14px !important;
+    background: #f9fafb !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 12px !important;
+    transition: background-color .25s ease, box-shadow .2s ease !important;
+}
+
+.order-card:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .06) !important;
+    background: #f0f0f0 !important;
+}
+
+.order-card[data-status="processing"],
+.order-card.processed {
+    background: #d4edda !important;
+}
+/* ---------- 2. BADGET ---------- */
+/* 2.1 Vasemman yläkulman numerobadge */
+.orderno-badge {
+    position: absolute !important;
+    top: 5px !important;
+    left: -32px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    background: #000 !important;
+    color: #fff !important;
+    font-size: .6rem !important;
+    font-weight: 700 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* 2.2 Status-badge */
+.status-badge,
+.badge {
+    position: absolute !important;
+    top: -15px !important;
+    right: 5px !important;
+    padding: 5px !important;
+    border-radius: 8px !important;
+    line-height: 1 !important;
+    font-size: .65rem !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+}
+.order-card[data-status="processing"] .status-badge,
+.order-card.processed .badge {
+    background: #16a34a !important;
+}
+
+.order-card[data-status="pending"] .status-badge,
+.order-card.pending .badge {
+    background: #eab308 !important;
+    color: #111 !important;
+}
+
+/* ---------- 3. SARAKKEASETTELU JA HEADER ---------- */
+.order-header,
+.order-columns {
+    display: grid !important;
+    grid-template-columns: 110px 320px 1fr 40px !important;
+    gap: 12px !important;
+    align-items: start !important;
+    width: 100% !important;
+}
+
+/* Header-tyylit */
+.order-header {
+    font-weight: bold !important;
+    background: #facc15 !important;
+    padding: 0.75em 1em !important;
+    margin-bottom: 10px !important;
+    align-items: center !important;
+}
+
+.order-header>div,
+.order-columns>div {
+    display: flex !important;
+    align-items: left !important;
+    min-width: 0 !important;
+}
+
+.order-columns>div:not(:first-child) {
+    border-left: 1px solid #c8e2bb !important;
+    padding-left: 10px !important;
+}
+
+/* Sarake: Päivämäärä */
+.orderdate {
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: .92rem !important;
+    color: #374151 !important;
+    overflow-wrap: anywhere !important;
+}
+
+/* Sarake: Sähköposti */
+.orderemail {
+    font-size: .92rem !important;
+    color: #374151 !important;
+    overflow-wrap: anywhere !important;
+}
+
+/* Sarake: Lisätiedot */
+.order-details-column {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 8px !important;
+    width: 100% !important;
+    padding-left: 5px !important;
+    border-left: 1px solid #e3ba15 !important;
+}
+
+/* ---------- 4. TUOTELISTAUS ---------- */
+.orderitems {
+    width: 100% !important;
+    text-align: left !important;
+    display: block !important;
+}
+
+.orderitems ul {
+    margin: 0 !important;
+    padding-left: 0 !important;
+    list-style: none !important;
+}
+
+.orderitems li {
+    position: relative !important;
+    padding-left: 1.4em !important;
+    margin-bottom: 4px !important;
+    color: #111827 !important;
+    font-size: .92rem !important
+}
+
+.orderitems li::before {
+    content: "✔";
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    color: #16a34a !important;
+    font-weight: bold !important;
+}
+
+/* ---------- 5. LISÄTIEDOT / ORDER NOTE ---------- */
+.order-note {
+    font-size: 0.88rem !important;
+    background: #fef9c3 !important;
+    padding: 8px 12px !important;
+    margin-top: 10px !important;
+    border-left: 4px solid #facc15 !important;
+    border-radius: 6px !important;
+    color: #5b4300 !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+/* ---------- 6. PRETTY CHECKBOX ---------- */
+
+
+.pretty-checkbox {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+
+/* ============================
+   VALITSE KAIKKI NATIVE-CHECKBOX
+   ============================ */
+
+/* Wrapper käyttää order-checkbox-luokkaa */
+.toolbar-checkbox .order-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Natiivi checkbox näkyviin ja skaalaukseen */
+.toolbar-checkbox .order-checkbox input[type="checkbox"] {
+    opacity: 1 !important;
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+    transform: scale(1.5) !important;
+    margin: 0.3rem !important;
+    cursor: pointer !important;
+}
+
+/* Poista/commentoi nämä vanhat override-kohdat */
+/* .toolbar-checkbox .pretty-checkbox { … } */
+/* .toolbar-checkbox .pretty-checkbox input { display: none !important; } */
+/* .toolbar-checkbox .pretty-checkbox span { … } */
+
+.pretty-checkbox input:checked+span {
+    background: #0073aa !important;
+    border-color: #0073aa !important;
+}
+
+.pretty-checkbox input:checked+span:after {
+    content: '' !important;
+    position: absolute !important;
+    left: 4px !important;
+    top: 0 !important;
+    width: 6px !important;
+    height: 10px !important;
+    border: solid #fff !important;
+    border-width: 0 2px 2px 0 !important;
+    transform: rotate(45deg) !important;
+}
+
+.order-checkbox input[type="checkbox"] {
+    transform: scale(1.5) !important;
+    margin: 0.3rem !important;
+    cursor: pointer !important;
+}
+
+/* ---------- 7. TOOLBAR ---------- */
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-top: 30px;
+    /* yhdistyy tabsin kanssa ilman väliä */
+    margin-bottom: 32px;
+    padding: 18px 24px;
+    position: sticky;
+    top: 100px;
+    background: #fff;
+    z-index: 1001;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    border-radius: 0 0 16px 16px;
+    /* vain alakulmat pyöreäksi, jatkaa tabsista */
+    transition: top 0.3s ease;
+}
+
+.btn-return[disabled] {
+    background: #9ca3af !important;
+    color: #fff !important;
+    opacity: 0.4 !important;
+    cursor: not-allowed !important;
+    border: none !important;
+}
+
+/* Toolbar-painikkeet */
+.toolbar .approve-btn,
+.toolbar .btn-reject,
+.toolbar .btn-return,
+.toolbar .btn-delete,
+.toolbar .pdf-button {
+    margin: 0 !important;
+    padding: .6rem 1.2rem !important;
+    font-size: 0.95rem !important;
+    height: auto !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.toolbar-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#tap-date-filter {
+    display: flex;
+    /* aseta riviasettelu */
+    flex-wrap: wrap;
+    /* rivi katkeaa siististi pienellä näytöllä */
+    gap: 1rem;
+    /* väli kaikkien elementtien väliin */
+    align-items: flex-end;
+    /* labelit ylös – inputit & painikkeet alas */
+    padding: 10px 0;
+    /* kevyt pystytäyte – säädä makusi mukaan */
+}
+
+/* ========== MOBIILINÄKYMÄ (<=600px) ========== */
+
+
+@media (max-width: 600px) {
+
+    /* Toolbar */
+    .toolbar {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 1001 !important;
+        padding: 20px !important;
+        margin-top: 30px !important;
+        margin-bottom: 15px !important;
+        background: #f9fafb !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .toolbar .approve-btn,
+    .toolbar .btn-reject,
+    .toolbar .btn-return {
+        margin-top: 3px !important;
+    }
+
+    .toolbar .pretty-checkbox {
+        margin-top: 20px !important;
+    }
+
+    .toolbar button {
+        width: 100% !important;
+    }
+
+    /* Sarakeasettelu ja header mobiilissa */
+    .order-header,
+    .order-columns {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 8px !important;
+        padding: 1em !important;
+    }
+
+    .order-header>div,
+    .order-columns>div {
+        flex: 1 1 100% !important;
+        border-left: none !important;
+        /* Poistaa väliäänet mobiilissa */
+        padding-left: 0 !important;
+        text-align: left !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .order-header {
+        display: none !important;
+    }
+
+    /* order-checkbox oikeaan paikkaan */
+    .order-checkbox {
+        align-self: flex-end !important;
+    }
+
+    /* Kortin mobiilisti padding ja margin */
+    .order-card {
+        padding: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* orderdate, orderemail, order-note */
+    .orderdate,
+    .orderemail,
+    .order-note {
+        text-align: left !important;
+        font-size: .9rem !important;
+    }
+
+    .orderitems li {
+        font-size: 0.9rem !important;
+    }
+
+    /* orderitems ja listaustyyli */
+    .orderitems ul {
+        padding-left: 0em !important;
+    }
+
+    .orderemail {
+        font-size: .92rem !important;
+        color: #374151 !important;
+        overflow-wrap: anywhere !important;
+        border-bottom: 1px solid #b2dbae;
+        width: 100%;
+        margin-bottom: 0px;
+        padding-bottom: 5px;
+        /* gap: 10px; */
+    }
+
+    .order-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .tab-actions {
+        margin-left: 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: flex-end !important;
+        margin-top: 10px !important;
+    }
+
+    .pdf-button {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    /* Poistetaan väliäänet mobiilista */
+    .order-columns>div:not(:first-child) {
+        border-left: none !important;
+    }
+
+    .approve-btn {
+        width: 100% !important;
+        margin: 1rem 0 0 !important;
+        font-size: .95rem !important;
+    }
+}
+
+/* MODAALIEN PÄÄTYYLIT */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.35);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    margin: auto;
+    border-radius: 18px;
+    padding: 2.2em 2em 1.6em 2em;
+    box-shadow: 0 10px 32px 2px rgba(0, 0, 0, 0.12);
+    max-width: 98vw;
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+    position: relative;
+    font-size: 1.1rem;
+    color: #111;
+}
+
+
+/* ======= MODAALI: Palauta ======= */
+#confirm-return-yes {
+    background: #dc2626 !important;
+    /* red-600 */
+    color: #fff !important;
+}
+
+#confirm-return-yes:hover,
+#confirm-return-yes:focus {
+    background: #b91c1c !important;
+    /* red-700 */
+}
+
+/* Peruuta-painike (yhtenäinen muiden kanssa) */
+#confirm-return-modal .modal-buttons button:nth-child(2) {
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+#confirm-return-modal .modal-buttons button:nth-child(2):hover,
+#confirm-return-modal .modal-buttons button:nth-child(2):focus {
+    background: #d1d5db;
+    color: #111;
+}
+
+/* Tekstikentän tyyli palautusviestille */
+#return-message {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    resize: vertical;
+    margin-top: 12px;
+    box-sizing: border-box;
+}
+.modal-content p {
+    margin-bottom: 1.4em;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+/* Modaalin otsikon fonttikoko */
+.modal-title {
+    font-size: 20px !important;
+    /* Pidettiin otsikon koko suhteellisen suurena */
+}
+.btn-return {
+    background: #dc2626 !important;
+    /* punainen (Tailwind red-600) */
+    color: #fff !important;
+    margin-left: 10px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.btn-return:hover {
+    background: #b91c1c !important;
+    /* tummempi punainen */
+}
+
+.btn-return:disabled {
+    background: #9ca3af !important;
+    cursor: not-allowed !important;
+    opacity: .6 !important;
+}
+.modal-buttons {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.modal-buttons button {
+    padding: 0.8em 1.6em;
+    font-size: 1.06rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, box-shadow 0.15s;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07);
+    outline: none;
+}
+
+
+/* ===== MODAALI: Arkistoi ===== */
+#confirm-archive-yes {
+    background: #6b7280;
+    color: #fff;
+}
+
+#confirm-archive-yes:hover,
+#confirm-archive-yes:focus {
+    background: #4b5563;
+    color: #fff;
+}
+/* Hyväksy / lisää ostoskoriin - vihreä */
+#confirm-approve-yes,
+#confirm-to-cart-yes {
+    background: #16a34a;
+    color: #fff;
+}
+
+#confirm-approve-yes:hover,
+#confirm-to-cart-yes:hover,
+#confirm-approve-yes:focus,
+#confirm-to-cart-yes:focus {
+    background: #15803d;
+    color: #fff;
+}
+
+/* Poista / Hylkää - punainen */
+#confirm-reject-yes,
+#confirm-delete-yes {
+    background: #ef4444;
+    color: #fff;
+}
+
+#confirm-reject-yes:hover,
+#confirm-delete-yes:hover,
+#confirm-reject-yes:focus,
+#confirm-delete-yes:focus {
+    background: #b91c1c;
+    color: #fff;
+}
+
+/* Peruuta - harmaa */
+#cancel-approve,
+#cancel-reject,
+#cancel-delete,
+#cancel-to-cart,
+#cancel-archive {
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+#cancel-approve:hover,
+#cancel-reject:hover,
+#cancel-delete:hover,
+#cancel-to-cart:hover,
+#cancel-approve:focus,
+#cancel-reject:focus,
+#cancel-delete:focus,
+#cancel-to-cart:focus {
+    background: #d1d5db;
+    color: #111;
+}
+
+
+
+@media (max-width: 500px) {
+    .modal-content {
+        max-width: 96vw;
+        padding: 1.2em 0.7em 1.1em 0.7em;
+    }
+
+    .modal-buttons button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.7em 0.7em;
+    }
+
+    .modal-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* ---------- 8. PAINIKKEET ---------- */
+/* Approve-btn, return, reject, delete, pdf-button, btn-cancel, modaalin napit */
+.approve-btn,
+.btn-reject,
+.btn-return,
+.btn-delete,
+.pdf-button,
+.btn-cancel, .btn-archive {
+    padding: .6rem 1.2rem !important;
+    font-size: 0.95rem !important;
+    height: auto !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+    border-radius: 8px !important;
+    border: none !important;
+}
+.btn-archive {
+    background: #6b7280 !important;
+    /* sama harmaa kuin .btn-delete */
+    color: #fff !important;
+    padding: .6rem 1.2rem !important;
+    /* sama mitoitus kuin muilla */
+    font-size: 0.95rem !important;
+    border-radius: 8px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: background-color .2s ease !important;
+}
+
+.btn-archive:hover:enabled {
+    background: #4b5563 !important;
+}
+
+.btn-archive:disabled {
+    background: #9ca3af !important;
+    cursor: not-allowed !important;
+    opacity: .7 !important;
+}
+.approve-btn {
+    background: #35a628 !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+}
+
+.approve-btn:hover {
+    background: #287d1f !important;
+}
+
+.approve-btn:disabled {
+    background: #9ca3af !important;
+    cursor: not-allowed !important;
+    opacity: .7 !important;
+}
+
+.btn-reject {
+    background: #ef4444 !important;
+    color: #fff !important;
+}
+
+.btn-reject:hover {
+    background: #c23737 !important;
+}
+
+.btn-reject:disabled {
+    opacity: .4 !important;
+    cursor: not-allowed !important;
+}
+
+.btn-return:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-delete {
+    background: #6b7280 !important;
+    /* harmaa */
+    color: #fff !important;
+    margin-left: 10px !important;
+}
+
+.btn-delete:hover {
+    background: #4b5563 !important;
+}
+
+.btn-delete:disabled {
+    background: #9ca3af !important;
+    cursor: not-allowed !important;
+    opacity: 0.7 !important;
+}
+
+.pdf-button {
+    background-color: #f44336 !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    text-decoration: none !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    margin-left: auto !important;
+}
+
+.pdf-button:hover:enabled {
+    background-color: #d32f2f !important;
+    color: #fff !important;
+}
+
+.pdf-button:disabled {
+    background-color: #9ca3af !important;
+    color: #fff !important;
+    cursor: not-allowed !important;
+    opacity: 0.7 !important;
+}
+
+.btn-cancel {
+    background: #e5e7eb !important;
+    color: #111827 !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: 6px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease;
+}
+
+.btn-cancel:hover {
+    background: #d1d5db !important;
+    color: #111827 !important;
+}
+
+.tom-tabs {
+    display: flex !important;
+    flex-direction: column !important;
+    background: none;
+    padding: 0 !important;
+
+    margin-bottom: 0 !important;
+    margin-top: 20px !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-links {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+
+.tab-links a i,
+.tab-links a svg {
+    margin-right: 10px;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+.tab-links a {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 !important;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    color: #fff !important;
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 0 !important;
+    transition: background 0.18s, color 0.18s, box-shadow 0.15s;
+    text-align: center;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    position: relative;
+    min-width: 0;
+}
+
+/* Mobiili: vielä pehmeämpi ulkoasu */
+
+
+@media (max-width: 600px) {
+    .tom-tabs {
+        max-width: 100%;
+
+    }
+
+    .tab-links a {
+        font-size: 0.9rem !important;
+        padding: 22px 0 !important;
+    }
+}
+
+/* ---------- 10. MUUT ---------- */
+/* order-empty, order-grid, date-filter-wrapper, date-filter-form, loading-overlay, spinner, success-message, worksite-code jne. */
+
+/* Ei tilauksia -viesti */
+.order-empty {
+    background: #fef2f2 !important;
+    color: #991b1b !important;
+    border-left: 5px solid #ef4444 !important;
+    padding: 1rem !important;
+    border-radius: 6px !important;
+    font-size: 1rem !important;
+    margin-top: 10px;
+}
+
+/* Lista-wrapper */
+.order-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+}
+
+/* Date Filter Wrapper */
+.date-filter-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.date-filter-wrapper input[type="date"] {
+    padding: 6px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.btn-date-filter {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Date Filter Form */
+.date-filter-form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.date-filter-form label {
+    font-weight: 600;
+}
+
+.date-filter-form input,
+.date-filter-form button {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+}
+
+/* Loading Overlay */
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.loading-hidden {
+    display: none !important;
+}
+
+/* Spinner */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #ccc;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#loading-overlay p {
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Success Message */
+.success-message {
+    background: #ecfdf5;
+    border-left: 5px solid #10b981;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+    color: #065f46;
+    font-weight: 500;
+    font-size: .95rem;
+}
+
+/* Worksite Code */
+.worksite-code {
+    font-weight: 500;
+    font-size: 1.3rem !important;
+    padding-bottom: 15px;
+}
+
+/* Käytetään kahta riviä painikkeille */
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Välit painikkeiden välillä */
+}
+
+/* Rivi, jossa painikkeet ovat */
+.button-row {
+    display: flex;
+    justify-content: center;
+    /* Keskittää painikkeet */
+    gap: 10px;
+    /* Välit painikkeiden välillä */
+}
+
+/* Asetellaan painikkeet oikein */
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+
+    /* Suurenna ikonia ja lisää väliä tekstin alle */
+    .tab-links a i {
+        font-size: 1.8rem !important;
+        /* suurempi ikoni */
+    margin: 0 0 0.5em 0 !important;
+
+    }
+
+    /* Varmista, että ikoni ja teksti ovat keskitettynä */
+    .tab-links a {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* Tekstispanien rivitys mobiilissa */
+    .tab-links a .tab-text {
+        white-space: normal !important;
+        text-align: center !important;
+    }
+
+    .tab-links a .tab-text span {
+        display: block !important;
+        line-height: 1.2 !important;
+    }
+      .tab-links a {
+    overflow: visible; /* varmistaa, että nuoli näkyy */
+    padding-bottom: 4px; /* lisää tilaa nuolelle, jos tarvitsee */
+  }
+  .tab-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;            /* vain -1px, niin reuna peittyy */
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #1f52c1; /* aktiivisen tabin väri */
+  }
+}
+/* Lisää tämä CSS, jotta aktiivisen tabin alle tulee chevron-nuoli */
+.tab-links a {
+    position: relative;
+    /* Tarvitaan pseudo-elementin sijoitteluun */
+}
+
+
+@media (max-width: 600px) {
+
+    
+
+/* ========== TOOLBAR ACTIONS ========== */
+    .toolbar-actions {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 4px !important;
+        /* Tiivis väli napien välissä */
+        width: 100% !important;
+    }
+    /* Hyväksy & Hylkää -napit */
+    .toolbar-actions .approve-btn,
+    .toolbar-actions .btn-reject,
+        .toolbar-actions .btn-archive {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        padding: 0.6rem 1rem !important;
+        font-size: 0.95rem !important;
+    }
+
+    /* Halutessasi PDF-painike omaan riviin:
+  .toolbar-actions .pdf-button {
+    flex-basis: 100% !important;
+    margin-top: 0.5rem !important;
+  }
+  */
+
+    
+
+/* ========== “Valitse kaikki” -checkbox ========== */
+    .toolbar-checkbox {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .toolbar-checkbox .order-checkbox {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        cursor: pointer;
+    }
+
+    .toolbar-checkbox .order-checkbox input[type="checkbox"] {
+        opacity: 1 !important;
+        position: relative !important;
+        transform: scale(1.5) !important;
+        margin: 0.3rem !important;
+        cursor: pointer !important;
+    }
+}
+/* pieni arkistopainike tabien yläpuolella */
+.archive-jump {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.archive-btn {
+    background: #6b7280;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+    padding: .45rem .9rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background .18s;
+}
+
+.archive-btn:hover {
+    background: #4b5563;
+}
+.order-card.archived {
+    background: #e5e7eb !important;
+    opacity: .85;
+}.date-filter-form {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Kuukausi + nappi rivillä */
+.date-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.date-filter-row label {
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+/* Kuukausivalinta + suodatusnappi */
+.date-filter-row select,
+.date-filter-row .toggle-date-filter {
+    padding: 6px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.date-filter-row .toggle-date-filter {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.date-filter-row .toggle-date-filter:hover {
+    background-color: #333;
+}
+
+/* Piilotettavat kentät (alku/loppupvm + suodata-nappi) */
+.date-filter-fields {
+    display: none;
+    /* JS avaa tämän */
+    margin-top: 12px;
+    padding: 8px 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.date-filter-fields input[type="text"] {
+    padding: 6px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 140px;
+    flex: 1 1 150px;
+}
+
+.date-filter-fields button.btn-date-filter {
+    padding: 6px 14px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.date-filter-fields button.btn-date-filter:hover {
+    background-color: #333;
+}
+
+/* Mobiili */
+
+
+@media (max-width: 600px) {
+
+    .date-filter-row,
+    .date-filter-fields {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 8px 0;
+    }
+
+    .date-filter-row select,
+    .date-filter-row .toggle-date-filter,
+    .date-filter-fields input,
+    .date-filter-fields button {
+        width: 100%;
+    }
+}
+.archive-filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+.order-card.completed {
+    border-left: 4px solid green;
+}
+.archive-filters a {
+    padding: 6px 14px;
+    background: #e5e7eb;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #111827;
+    font-weight: 600;
+}
+
+.archive-filters a.active {
+    background: #1f52c1;
+    color: #fff;
+}
+/* esim. vihreä palkki vasemmalla */
+.order-card.completed {
+    border-left: 4px solid #16a34a;
+}
+/* =====================================================
+   MODERNI PÄIVÄMÄÄRÄSUODATIN
+   ===================================================== */
+:root {
+    --tap-yellow: #FEE000;
+    --tap-black: #000000;
+    --tap-gray: #f3f4f6;
+    --tap-border: #d1d5db;
+}
+
+ul.orderitems {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+/* =====================================================
+   Tapojärvi – Päivämääräsuodatin (inline)
+   ===================================================== */
+:root {
+    --tap-yellow: #FEE000;
+    --tap-black: #000;
+    --tap-gray: #f3f4f6;
+    --tap-border: #d1d5db;
+}
+
+/* Wrapper */
+.tap-date-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* kenttien väli */
+    align-items: flex-end;
+    /* labelit ylös – inputit alas */
+    padding: .85rem 1rem;
+    background: var(--tap-gray);
+    border: 1px solid var(--tap-border);
+    border-radius: 12px;
+}
+
+/* Label+input pino */
+.tap-date-filter .date-field {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    min-width: 140px;
+    /* estää liiallisen kutistumisen */
+    flex: 0 1 auto;
+    /* pysyy rivi‑layoutissa */
+}
+
+.tap-date-filter label {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.tap-date-filter input[type="date"] {
+    padding: .55rem .9rem;
+    font-size: .95rem;
+    border: 1px solid var(--tap-border);
+    border-radius: 8px;
+    background: #fff;
+    accent-color: var(--tap-black);
+    transition: border .15s;
+}
+
+.tap-date-filter input[type="date"]:focus {
+    outline: none;
+    border-color: var(--tap-black);
+}
+
+/* Suodata & Tyhjennä ‑painikkeet */
+.tap-date-filter .button {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .55rem 1.2rem;
+    font-size: .95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .18s, color .18s;
+}
+
+.tap-date-filter .button:not(.secondary) {
+    background: var(--tap-yellow);
+    color: var(--tap-black);
+    border: 1px solid var(--tap-yellow);
+}
+
+.tap-date-filter .button:not(.secondary):hover {
+    background: var(--tap-black);
+    color: var(--tap-yellow);
+}
+
+.tap-date-filter .button.secondary {
+    background: #e5e7eb;
+    color: #111827;
+    border: 1px solid #e5e7eb;
+}
+
+.tap-date-filter .button.secondary:hover {
+    background: #d1d5db;
+    color: #111;
+}
+
+/* Spinner piilossa oletuksena */
+.filter-btn .btn-spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-top-color: var(--tap-black, #000);
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+    display: none;
+}
+
+/* Lataustilassa: näytä spinneri labelin perässä */
+.filter-btn.loading .btn-spinner {
+    display: inline-block;
+}
+
+/* Varmistus, että teksti pysyy näkyvissä */
+.filter-btn.loading .btn-label {
+    opacity: 1 !important;
+}
+
+/* Lisää vähän enemmän väliä loppupäivän ja napin väliin */
+.filter-btn {
+    margin-left: .75rem;
+}
+
+/* Spinner animaatio (jos ei jo määritelty) */
+@keyframes spin {
+    to {
+        transform: rotate(360deg)
+    }
+}
+/* Tee koko date-field kursori-klikattavaksi */
+.tap-date-filter .date-field { cursor: pointer; }
+
+/* Itse input säilyttää normaali-kursorin tekstikentälle */
+.tap-date-filter .date-field input { cursor: text; }
+/* --------  M O B I I L I  -------- */
+@media(max-width:600px) {
+    .tap-date-filter {
+        flex-direction: column;
+        align-items: stretch
+    }
+
+    .filter-btn {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center
+    }
+}
+
+/* === TABASETTELUN KORJATUT TYYLIT === */
+.tab-links {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    /* Lisää väliä tabien väliin */
+}
+
+.tab-links a {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 !important;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    color: #fff !important;
+
+    border: none !important;
+    outline: none !important;
+    border-radius: 0 !important;
+    transition: background 0.18s, color 0.18s, box-shadow 0.15s;
+    text-align: center;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    position: relative;
+    min-width: 0;
+}
+
+.tab-links a i,
+.tab-links a svg {
+    margin-right: 10px;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+/* Aktiivinen tab */
+.tab-links a.active {
+    background: #1f52c1 !important;
+    color: #fff !important;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Hover vain ei-aktiivisille */
+.tab-links a:hover:not(.active) {
+    background: #000000 !important;
+    color: #fff !important;
+}
+/* Hover vain ei-aktiivisille */
+.tab-links a:not(.active) {
+    background: #cecece !important;
+    color: #fff !important;
+}
+/* Chevron-nuoli aktiivisen tabin alle */
+.tab-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #1f52c1;
+    z-index: 3;
+    pointer-events: none;
+}

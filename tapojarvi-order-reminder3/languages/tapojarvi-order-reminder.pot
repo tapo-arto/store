@@ -1,0 +1,191 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tapojärvi - Order Reminder\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-05 10:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.3.22\n"
+"X-Domain: tapojarvi-order-reminder"
+
+#: tapojarvi-order-reminder.php:201
+msgid "Ei oikeuksia tai virheellinen pyyntö."
+msgstr ""
+
+#: tapojarvi-order-reminder.php:123
+msgid ""
+"Erottele sähköpostiosoitteet pilkuilla, esim: test@example.com, "
+"toinen@example.com"
+msgstr ""
+
+#. %s = recipient display name
+#: templates/emails/plain/email-order-reminder.php:7
+#, php-format
+msgid "Hello %s,"
+msgstr ""
+
+#. %s = recipient display name
+#: templates/emails/email-order-reminder.php:9
+#, php-format
+msgid "Hello, %s!"
+msgstr ""
+
+#: templates/emails/email-order-reminder.php:30
+msgid ""
+"If you have any questions or need assistance, please contact Tapojärvi "
+"communications."
+msgstr ""
+
+#: templates/emails/email-order-reminder.php:33
+msgid ""
+"If your worksite has only one or two orders during the week, you may wait "
+"until the next week before approving them. This helps avoid unnecessary "
+"small shipments because orders approved by the manager are sent directly to "
+"suppliers. Placing larger batches improves logistics efficiency and saves "
+"resources."
+msgstr ""
+
+#: tapojarvi-order-reminder.php:50
+msgid "Joka viikko"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:135
+msgid "Keskiviikko"
+msgstr ""
+
+#. %s = login URL
+#: templates/emails/email-order-reminder.php:27
+#: templates/emails/plain/email-order-reminder.php:28
+#, php-format
+msgid "Log in: %s"
+msgstr ""
+
+#. Description of the plugin
+msgid "Lähettää muistutuksia/tilausmuistutuksia (cron tms.)"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:152
+msgid "Lähetysaika (24h)"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:128
+msgid "Lähetyspäivä"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:114
+msgid "Lähetä muistutukset vain testiosoitteisiin"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:166
+msgid "Lähetä testimuistutus"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:133
+msgid "Maanantai"
+msgstr ""
+
+#: includes/emails/class-wc-email-order-reminder.php:10
+msgid "Order Reminder"
+msgstr ""
+
+#: includes/emails/class-wc-email-order-reminder.php:18
+#: templates/emails/email-order-reminder.php:4
+msgid "Order reminder"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:137
+msgid "Perjantai"
+msgstr ""
+
+#: includes/emails/class-wc-email-order-reminder.php:11
+msgid "Reminds order managers about unapproved (pending) orders once a week."
+msgstr ""
+
+#. Name of the plugin
+msgid "Tapojärvi - Order Reminder"
+msgstr ""
+
+#. Author of the plugin
+msgid "Tapojärvi Oy"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:102
+msgid "Tapojärvi – Tilausmuistutus"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:162
+msgid "Testaa muistutusta"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:110
+msgid "Testimoodi"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:170
+msgid "Testimuistutus lähetetty (testitilassa)."
+msgstr ""
+
+#: tapojarvi-order-reminder.php:119
+msgid "Testisähköpostit"
+msgstr ""
+
+#: templates/emails/email-order-reminder.php:31
+msgid ""
+"This is an automated message from the webshop. Please do not reply to this "
+"message."
+msgstr ""
+
+#: tapojarvi-order-reminder.php:134
+msgid "Tiistai"
+msgstr ""
+
+#. page_title
+#: tapojarvi-order-reminder.php:91 tapojarvi-order-reminder.php:92
+msgid "Tilausmuistutus"
+msgstr ""
+
+#: tapojarvi-order-reminder.php:136
+msgid "Torstai"
+msgstr ""
+
+#. %1$d = count, %2$s = worksite code
+#: includes/emails/class-wc-email-order-reminder.php:78
+#, php-format
+msgid "You have %1$d pending order for worksite: %2$s"
+msgid_plural "You have %1$d pending orders for worksite: %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: number of pending orders, 2: worksite code
+#: templates/emails/email-order-reminder.php:16
+#, php-format
+msgid "You have %1$d pending order to approve for worksite: %2$s"
+msgid_plural "You have %1$d pending orders to approve for worksite: %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %d = count
+#: includes/emails/class-wc-email-order-reminder.php:98
+msgid "You have %d pending order"
+msgid_plural "You have %d pending orders"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %d = number of pending orders
+#: templates/emails/plain/email-order-reminder.php:15
+msgid "You have %d pending order awaiting approval."
+msgid_plural "You have %d pending orders awaiting approval."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/emails/class-wc-email-order-reminder.php:19
+msgid "You have pending orders to review"
+msgstr ""

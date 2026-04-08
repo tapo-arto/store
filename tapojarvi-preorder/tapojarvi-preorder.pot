@@ -1,0 +1,114 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tapojärvi – Worksite Pre-order\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-05 10:18+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.3.22\n"
+"X-Domain: tapojarvi-preorder"
+
+#: tapojarvi-preorder.php:219 tapojarvi-preorder.php:226
+msgid "Haluatko varmasti jatkaa?"
+msgstr ""
+
+#: tapojarvi-preorder.php:218
+msgid ""
+"Jos haluat kerätä tilauksen yhteistilaukseen ja lähettää myöhemmin muiden "
+"tilausten kanssa, sulje tämä ikkuna ja aktivoi “Lisää tämä tilaus työmaan "
+"yhteistilaukseen”."
+msgstr ""
+
+#: tapojarvi-preorder.php:225
+msgid ""
+"Keräyslista on tarkoitettu vaatekokojen ja mallien keräämiseen "
+"yhteistilausta varten. Jos haluat tilata turvallisuusmateriaaleja tai "
+"laatikkotavaroita suoraan toimittajalta, sulje tämä ikkuna ja poista edellä "
+"mainittu valinta."
+msgstr ""
+
+#: tapojarvi-preorder.php:228
+msgid "Kyllä, jatka"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Lisää kassalle tilausten hallitsijalle painikkeen, jolla voi valita, meneekö "
+"tilaus työmaatilaukset sivulle vai toimittajalle."
+msgstr ""
+
+#: tapojarvi-preorder.php:72
+msgid "Lisää tämä tilaus työmaan yhteistilaukseen"
+msgstr ""
+
+#: tapojarvi-preorder.php:197 tapojarvi-preorder.php:202
+#: tapojarvi-preorder.php:208
+msgid "Nykyinen tilaustapa:"
+msgstr ""
+
+#: tapojarvi-preorder.php:229
+msgid "Peruuta"
+msgstr ""
+
+#: tapojarvi-preorder.php:210
+msgid ""
+"Suositellaan esimerkiksi turvallisuusmateriaalien tai laatikossa "
+"toimitettavien tuotteiden tilaamiseen."
+msgstr ""
+
+#: tapojarvi-preorder.php:204
+msgid "Suositeltava vaihtoehto, kun tilaus halutaan yhdistää muiden kanssa."
+msgstr ""
+
+#. Author of the plugin
+msgid "Tapojärvi Oy - Arto Huhta"
+msgstr ""
+
+#. Name of the plugin
+msgid "Tapojärvi – Worksite Pre-order"
+msgstr ""
+
+#: tapojarvi-preorder.php:203
+msgid ""
+"Tilaus lisätään työmaan keräyslistaan ja toimitetaan myöhemmin osana "
+"yhteistilausta."
+msgstr ""
+
+#: tapojarvi-preorder.php:209
+msgid ""
+"Tilaus lähetetään suoraan toimittajille, eikä jää työmaan keräyslistaan."
+msgstr ""
+
+#: tapojarvi-preorder.php:224
+msgid ""
+"Tämä tilaustapa lisää tilauksen työmaan keräyslistaan työmaatilaukset-"
+"sivulle, eikä tilausta vielä toimiteta toimittajille."
+msgstr ""
+
+#: tapojarvi-preorder.php:216
+msgid ""
+"Tämä tilaustapa lähettää tilauksen suoraan tuotteiden toimittajalle eikä se "
+"tallennu työmaan yhteistilaukseen."
+msgstr ""
+
+#: tapojarvi-preorder.php:217
+msgid ""
+"Tätä tilaustapaa tulee käyttää esimerkiksi turvallisuusmateriaaleihin tai "
+"laatikkotuotteisiin, joita ei voi tilata yksittäin."
+msgstr ""
+
+#: tapojarvi-preorder.php:214
+msgid "Valittu toimitustapa: <br>Suora tilaus toimittajalta"
+msgstr ""
+
+#: tapojarvi-preorder.php:222
+msgid "Valittu toimitustapa: <br>Työmaan yhteistilaus"
+msgstr ""
